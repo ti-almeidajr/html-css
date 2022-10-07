@@ -13,13 +13,11 @@
         table {
             width: 500px;
             border-collapse: collapse; /*junta as bordas*/
-            position: relative; /*configuração para ajudar o cabeçalho da tabela grudar em cima*/
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
-            text-align: center;
         }
 
         caption {
@@ -29,35 +27,26 @@
             background-color: lightgray;
         }
 
-        thead, tfoot { /*cabeça da tabela*/
-            background-color: #383838;;
+        thead { /*cabeça da tabela*/
+            background-color: #383838;
             color: white;
         }
 
-        thead > tr > th { /*cabeçalho da grudar e tabela rolar*/
-            position: sticky;
-            top: -1px;
-            background-color: #383838;   
+        tbody > tr > th {
+            background-color: yellow;
         }
 
-        tbody > tr:nth-child(odd) { /*pseudo-class, aplica zebrado nas linhas ímpares*/
-            background-color: beige;
+        .cordestaque {
+            background-color: #383838;
+            color: white;
         }
-
-        tbody > tr:nth-child(even) { /*pseudo-class, aplica zebrado nas linhas pares*/
-            background-color: lightgray;
-        }
-
-        td.num { /*class - num*/
-            text-align: right;
-        }
+        
     </style>
 </head>
 <body>
-    <h1>Exercícios de Tabelas</h1>
     <table>
         <caption>
-            Filmes Favoritos
+            Boletim Escolar
         </caption>
 
         <thead>
@@ -75,42 +64,51 @@
 
         <tbody>
             <tr>
-                <th scope="rowgroup" rowspan="3">Exatas</th> <!--os dados estão em um grupo de linhas-->
-                <td>Matématica</td>
+                <th scope="rowgroup" rowspan="4">Exatas</th> <!--os dados estão em um grupo de linhas-->
+                <td class="esq">Matématica</td>
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td> 
             </tr>
             <tr>
-                <td>Beatriz Souza</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batman</td>  
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>  
             </tr>
             <tr>
-                <td>Cláudia Melo</td>
-                <td>Oblivion</td>
-                <td>Matriz</td>
-                <td>Big Hero</td>  
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>  
             </tr>
             <tr>
-                <th scope="rowgroup"  rowspan="3">Homens</th> <!--os dados estão em um grupo de linhas-->
-                <td>Bruno Mendonça</td>
-                <td>Intocáveis</td>
-                <td>Amnéisia</td>
-                <td>Gladiador</td>  
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>  
             </tr>
             <tr>
-                <td>Daniel Lourenço</td>
-                <td>Wall-E</td>
-                <td>Oldboy</td>
-                <td>Dangal</td>   
+                <th scope="col" colspan="4" class="cordestaque">Média de Exatas</th>
+                <td class="cordestaque">0.0</td>  
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th> <!--os dados estão em um grupo de linhas-->
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>  
             </tr>
             <tr>
-                <td>Fabiano Mota</td>
-                <td>Star Wars 5</td>
-                <td>Taxi Driver</td>
-                <td>Toy Story</td>  
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>    
+            </tr>
+            <tr>
+                <th scope="col" colspan="4" class="cordestaque">Média de Humanas</th>
+                <td class="cordestaque">0.0</td>  
             </tr>
         </tbody>
 
