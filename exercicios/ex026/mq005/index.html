@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="estilo/style.css">
+
+    <!--Usando ícone hamburguinho direto do google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
+
 <body>
-    
+
+    <header>
+        <h1>Meu Site</h1>
+
+         <!--Usando ícone hamburguinho direto do google. onclick="clickMenu(): chama o scrit para abrir o menu hamburguer-->
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quod? Excepturi, dolorem temporibus. Rem error recusandae, suscipit numquam, natus porro dolores necessitatibus incidunt accusamus laborum doloremque facilis asperiores velit quia! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic minima minus, fugiat placeat dolorem libero enim voluptatem tempore non aspernatur eum aliquid iusto distinctio suscipit aut quas, vel, repellat eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusantium veniam labore accusamus iste, blanditiis architecto nemo quam perspiciatis sunt, est nostrum ab natus omnis illo in. Enim, alias dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quod? Excepturi, dolorem temporibus. Rem error recusandae, suscipit numquam, natus porro dolores necessitatibus incidunt accusamus laborum doloremque facilis asperiores velit quia! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic minima minus, fugiat placeat dolorem libero enim voluptatem tempore non aspernatur eum aliquid iusto distinctio suscipit aut quas, vel, repellat eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusantium veniam labore accusamus iste, blanditiis architecto nemo quam perspiciatis sunt, est nostrum ab natus omnis illo in. Enim, alias dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quod? Excepturi, dolorem temporibus. Rem error recusandae, suscipit numquam, natus porro dolores necessitatibus incidunt accusamus laborum doloremque facilis asperiores velit quia! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic minima minus, fugiat placeat dolorem libero enim voluptatem tempore non aspernatur eum aliquid iusto distinctio suscipit aut quas, vel, repellat eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusantium veniam labore accusamus iste, blanditiis architecto nemo quam perspiciatis sunt, est nostrum ab natus omnis illo in. Enim, alias dolores.
+            </p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') { /*Se tiver mostrando*/
+                itens.style.display = 'none' /*Ao clicar esconde*/
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
 </body>
 </html>
